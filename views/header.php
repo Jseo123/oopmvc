@@ -7,16 +7,15 @@
   <title>Main</title>
   <meta name="description" content="A simple HTML5 Template for new projects.">
   <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="assets/css/default.css">
 </head>
 <body>
-<?php require "views/header.php";
-?>
-
-<div id="main">
-<h1 class="center">Welcome to the site</h1>
+<div id="header">
+    <ul>
+        <li><a href="index"></a>Inicio</li>
+        <li><a href="new"></a>Nuevo</li>
+        <li><a href="consult"></a>Consulta</li>
+    </ul>
 </div>
-
-<?php require "views/footer.php";
-?>
 </body>
 </html>

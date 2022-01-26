@@ -5,7 +5,6 @@ class Main extends Controller{
     {
         parent::__construct();
         $this->view->render("main/index");
-        echo "<p>New main Controller</p>";
     }
 
     public function hello(){
