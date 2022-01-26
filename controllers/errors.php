@@ -1,5 +1,5 @@
 <?php
-require_once "./libs/controller.php";
+//require_once "./libs/controller.php";
 class Errors extends Controller{
     function __construct()
     {
