@@ -17,15 +17,15 @@
 <form action="<?php echo constant("URL"); ?>newer/addStudent" method="POST">
     <p>
         <label for="enrollment">Enrollment</label><br>
-        <input type="text" name="enrollment" id="">
+        <input type="text" name="enrollment" id="" required>
     </p>
     <p>
         <label for="name">Name</label><br>
-        <input type="text" name="name" id="">
+        <input type="text" name="name" id="" required>
     </p>
     <p>
         <label for="lastName">Last Name</label><br>
-        <input type="text " name="lastName" id="">
+        <input type="text " name="lastName" id="" required>
     </p>
 
     <p><input type="submit" value="Add new student"></p>
