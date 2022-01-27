@@ -13,8 +13,8 @@
 <div id="header">
     <ul>
         <li><a href="main">Inicio</a></li>
-        <li><a href="newer">Nuevo</a></li>
-        <li><a href="consult">Consulta</a></li>
+        <li><a href="Newer">Nuevo</a></li>
+        <li><a href="Consult">Consulta</a></li>
     </ul>
 </div>
 </body>

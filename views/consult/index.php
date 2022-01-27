@@ -13,7 +13,7 @@
 ?>
 
 <div id="main">
-<h1 class="center">Consultation yone</h1>
+<h1 class="center">Consultation zone</h1>
 </div>
 
 <?php require "views/footer.php";
