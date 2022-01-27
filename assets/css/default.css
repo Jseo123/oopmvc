@@ -25,5 +25,20 @@ body{
     padding: 10px;
 }
 footer{
+background-color: #ccc;
+padding: 20px;
+}
 
+#main{
+    padding: 20px 20;
+    width:  500px;
+    margin: 0 auto;
+}
+
+.center{
+    text-align: center;
+}
+
+.error{
+    color:#ac2323;
 }

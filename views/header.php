@@ -12,9 +12,9 @@
 <body>
 <div id="header">
     <ul>
-        <li><a href="index"></a>Inicio</li>
-        <li><a href="new"></a>Nuevo</li>
-        <li><a href="consult"></a>Consulta</li>
+        <li><a href="main">Inicio</a></li>
+        <li><a href="newer">Nuevo</a></li>
+        <li><a href="consult">Consulta</a></li>
     </ul>
 </div>
 </body>
