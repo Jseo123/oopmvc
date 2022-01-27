@@ -1,5 +1,5 @@
 <?php
-class consult extends controller {
+class Consult extends controller {
 
 function __construct()
 {
