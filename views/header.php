@@ -7,14 +7,14 @@
   <title>Main</title>
   <meta name="description" content="A simple HTML5 Template for new projects.">
   <meta name="author" content="SitePoint">
-  <link rel="stylesheet" href="assets/css/default.css">
+  <link rel="stylesheet" href="<?= constant("URL") ?>assets/css/default.css">
 </head>
 <body>
 <div id="header">
     <ul>
-        <li><a href="main">Inicio</a></li>
-        <li><a href="Newer">Nuevo</a></li>
-        <li><a href="Consult">Consulta</a></li>
+        <li><a href="<?= constant("URL")?>main">Inicio</a></li>
+        <li><a href="<?= constant("URL")?>newer">Nuevo</a></li>
+        <li><a href="<?= constant("URL")?>consult">Consulta</a></li>
     </ul>
 </div>
 </body>
