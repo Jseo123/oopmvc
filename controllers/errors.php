@@ -7,4 +7,9 @@ class Errors extends Controller{
         $this->view->message = "Big big no no.";
      // echo "<p>Failed to load resource.</p>" ;
     }
+
+    function render(){
+        $this->view->render("main/index");
+    }
+    
 }

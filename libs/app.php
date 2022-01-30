@@ -12,6 +12,7 @@ class App{
       require_once $filecontroller;
       $controller = new Main();
       $controller->loadModel($url[0]);
+      $controller->render();
       return false;
     }
 
@@ -23,6 +24,8 @@ class App{
 
 if(isset($url[1])){
   $controller->{$url[1]}();
+} else {
+  $controller->render();
 }
 
       } else {

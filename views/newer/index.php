@@ -14,6 +14,7 @@
 
 <div id="main">
 <h1 class="center">New session</h1>
+<div class="center"><?=$this->message?></div>
 <form action="<?php echo constant("URL"); ?>newer/addStudent" method="POST">
     <p>
         <label for="enrollment">Enrollment</label><br>

@@ -6,10 +6,14 @@ class NewerModel extends Model{
     }
 
     public function insert($data){
+        try  {
         $query = $this->db->connect()->prepare(
             "INSERT INTO students (enrollment, name, lastName) VALUES (:enrollment, :name, :lastName)"
         );
         $query->execute(["enrollment"=> $data["enrollment"], "name"=> $data["name"], "lastName"=>$data["lastName"]]);
-        echo "Insert data";
+   return true;
+ } catch (PDOException $e){
+return false;
+    }
     }
 }
