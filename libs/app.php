@@ -1,13 +1,14 @@
 <?php
-class App{
+class App
+{
 
-    function __construct()
-    {
-      $url = isset($_GET["url"]) ? $_GET["url"]: null;
-      $url = rtrim($url, "/");
-      $url = explode("/", $url);
+  function __construct()
+  {
+    $url = isset($_GET["url"]) ? $_GET["url"] : null;
+    $url = rtrim($url, "/");
+    $url = explode("/", $url);
 
-    if(empty($url[0])){
+    if (empty($url[0])) {
       $filecontroller = "controllers/main.php";
       require_once $filecontroller;
       $controller = new Main();
@@ -16,21 +17,29 @@ class App{
       return false;
     }
 
-      $filecontroller = "controllers/" . $url[0] . ".php";
-      if(file_exists($filecontroller)){
-        require_once $filecontroller;
-        $controller = new $url[0];
-        $controller->loadModel($url[0]);
+    $filecontroller = "controllers/" . $url[0] . ".php";
+    if (file_exists($filecontroller)) {
+      require_once $filecontroller;
+      $controller = new $url[0];
+      $controller->loadModel($url[0]);
+      $nparam = sizeof($url);
 
-if(isset($url[1])){
-  $controller->{$url[1]}();
-} else {
-  $controller->render();
-}
-
+      if ($nparam > 1) {
+        if ($nparam > 2) {
+          $param = [];
+          for ($i = 2; $i < $nparam; $i++) {
+            array_push($param, $url[$i]);
+          }
+          $controller->{$url[1]}($param);
+        } else {
+          $controller->{$url[1]}();
+        }
       } else {
-        require_once "controllers/errors.php";
-$controller = new Errors();
+        $controller->render();
       }
+    } else {
+      require_once "controllers/errors.php";
+      $controller = new Errors();
     }
+  } 
 }

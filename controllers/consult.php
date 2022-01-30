@@ -13,5 +13,19 @@ function render(){
     $this->view->render("consult/index");
 }
 
+function seeStudent($param = null){
+$studentId = $param[0];
+$student = $this->model->getById($studentId);
+$this->view->student = $student;
+$this->view->message = "";
+$this->view->render("consult/details");
+}
 
+function updateStudent(){
+
+}
+
+function deleteStudent(){
+
+}
 }

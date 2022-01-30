@@ -33,8 +33,8 @@
       <td><?=$student->enrollment?></td>
       <td><?=$student->name?></td>
       <td><?=$student->lastName?></td>
-      <td><a href="">Update</a></td>
-      <td><a href="">Delete</a></td>
+      <td><a href="<?=constant("URL")."consult/seeStudent/". $student->enrollment ?>">Update</a></td>
+      <td><a href="<?=constant("URL")."consult/deleteStudent/". $student->enrollment ?>">Delete</a></td>
     </tr>
 <?php } ?>
   </tbody>
